@@ -1,0 +1,24 @@
+RESEARCH PROPOSAL
+HackathonGP-6: Jumah Musah and Adzewoda Courage
+Title: Sonar Underwater Mine vs Rock Prediction Using Machine Learning
+Problem Definition
+The project aims to develop a machine-learning model to distinguish between mines and rocks underwater using sonar signal data. This classification is crucial for maritime safety and defense applications, ensuring accurate identification and handling of underwater objects.
+Motivation
+Existing sonar-based mine detection systems often suffer from high false alarm rates due to the similarity between mine and rock signatures. Misidentifying mines as rocks can have profound consequences while mistaking rocks for mines wastes resources. Machine learning can improve the precision and reliability of sonar-based object classification, enhancing underwater safety and efficiency.
+Approach
+To tackle this problem, we will utilize the Sonar dataset from Kaggle, which contains 208 instances of sonar signals reflected off metal cylinders (mines) and rocks. Our methodology involves the following steps:
+1.	Data Preprocessing:
+o	Normalize sonar signal data.
+o	Split the dataset into training and testing sets.
+2.	Model Selection and Training:
+o	Implement and train KNeighborsClassifier, LogisticRegression, and SVC.
+o	Combine these classifiers using a VotingClassifier for improved performance.
+3.	Model Evaluation:
+o	Evaluate classifiers and the ensemble model using accuracy, precision, recall, and F1-score.
+o	Perform KFold cross-validation to ensure robustness and generalizability.
+4.	Optimization:
+o	Tune hyperparameters to enhance model performance.
+o	Analyze feature importance to identify key sonar signal characteristics that differentiate mines from rocks.
+References
+Ramya Yaramasu, S., Sai Gayatri, U., Manjusha, V., Bhanu, V. C., & Indu, K. (2183). UNDERWATER MINE & ROCK PREDICTION BY EVALUATION OF MACHINE LEARNING ALGORITHMS. Www.Irjmets.Com @International Research Journal of Modernization in Engineering. www.irjmets.com
+Dataset Link:https://www.kaggle.com/datasets/armanakbari/connectionist-bench-sonar-mines-vs-rocks
